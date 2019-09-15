@@ -1,2 +1,0 @@
-# VUEX
-Created with CodeSandbox
