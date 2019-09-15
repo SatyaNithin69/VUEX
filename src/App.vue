@@ -1,20 +1,15 @@
 <template>
-  <div id="app">
-    <img width="25%" src="./assets/logo.png">
-    <HelloWorld msg="Hello Vue in CodeSandbox!" />
+  <div id="nav">
+    <router-link to="/">Home</router-link>
+    <router-link to="/cats">Cats</router-link>
+    <router-link to="/dogs">Dogs</router-link>
+    <router-link to="/pet">Pet</router-link>
+    <b-container>
+      <router-view/>
+    </b-container>
   </div>
 </template>
 
-<script>
-import HelloWorld from "./components/HelloWorld";
-
-export default {
-  name: "App",
-  components: {
-    HelloWorld
-  }
-};
-</script>
 
 <style>
 #app {
